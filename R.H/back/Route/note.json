@@ -1,0 +1,20 @@
+[{
+    "nom": "Bruno", 
+    "prenom":"Marcelino",
+    "age":70
+},
+{
+    "nom":"Heni", 
+    "prenom":"Lecacher",
+    "age":25
+},
+{
+    "nom":"Mamisoa", 
+    "prenom":"Raz",
+    "age":49
+},
+{
+    "nom":"Tsiory", 
+    "prenom":"Raz",
+    "age":29
+}]
