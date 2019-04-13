@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>batail</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<center>
+		<div>
+			<div id="jeu"></div>
+			<button id="b" onclick="myFunction()">Go</button>
+	     </div>
+	</center>
+	
+	
+	<script>
+		function myFunction(){
+			b =["pierre","papier","ciseau","pierre","papier","ciseau"]
+			var a=	Math.floor(Math.random() * 6); 
+			document.getElementById("jeu").innerHTML=b[a];		
+		}
+	</script>
+</body>
+</html>

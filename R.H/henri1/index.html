@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <title>simple</title>
+</head>
+    <body> 
+     <input id="a"></inpût>
+     <button onclick="fonction()"></button>   
+    <h3 id="res"></h3> 
+
+
+            <script>
+                function fonction() {
+                    var x = document.getElementById("a").value;
+                    //document.getElementById("res").innerHTML = x;
+                }
+                
+                document.getElementById("res")= Date.now()
+                var a = [2,5,1,10]
+                for(let i=0; i<= a.length; i++){
+                    a.sort((x,y)=>{return parseInt(x) - parseInt(y)})
+                }
+                console.log(a);
+                
+               /*  
+                var a = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"]
+                var b = 2;
+                var res = [];
+                var text = "HENRIZ"
+                
+                for(let i=0; i<=text.length;i++){
+                    for(let j=0; j<=a.length-b; j++){
+                        if(text.slice(i,i+1)==a[j]){
+                            res.push(a[j+b])
+                        }
+                    }
+                }
+                var x="";
+                for(let k=0; k<res.length;k++){
+                    x += res[k];
+                }    
+                console.log(text);
+                console.log(a);                
+                console.log(x);
+                */ 
+		/* var henri = [2 ,5 , 6 ,8 ,9]
+    
+		for(var i = 0;i< henri.length;i++){
+			var affichage = henri[i];
+           if(affichage % 2 == 0){
+               console.log('paire : ' + affichage);
+           }
+           else{
+               console.log('impaire : ' + affichage);
+           }
+		} */
+        
+   
+        //    var x=[2,5,6,7,8];
+        //     var a= [];
+        //     var b=[];
+        //     for(var i = 0 ; i< x.length;i++){
+        //         if(x[i]%2===0){
+        //          a.push(x[i]);
+        //         }else{
+        //          b.push(x[i]);
+        //         }
+        //     }
+        //     console.log('Pair:',a,);
+        //     console.log('Impair:',b);
+
+/*
+            var x = [1,2,3,4,5];
+            var a = [6,7,8,9];
+            function sum(){
+                var y = [];
+                for(var i = 0;i<Math.max(x.length, a.length); i++){
+                    y.push((x[i] || 0) + (a[i] || 0));
+                }
+                return y;
+            }
+            console.log(x);
+            console.log(a);
+    console.log(sum());
+ */  
+ /* 
+            var f=[3,4,5,2,1];
+            var g=[6,5,1,2];
+            var j=[9,7,5,6,4,3];
+            var a=[6,5,1,2];
+            function som(){
+               var k = [];
+              for(var i = 0; i< Math.max(f.length, g.length,j.length, a.length); i++){
+                 k.push((f[i] || 0) + (g[i] || 0)+(j[i] || 0) + (a[i] || 0)); 
+              }
+              return k;
+            }
+            console.log(f);
+            console.log(g);
+            console.log(j)ù;
+            console.log(a);
+            console.log(som());
+          */ 
+        //  var a = 'a'
+        //   if(typeof(a)=='number'){
+        //     document.write(a, 'est un nombre'); 
+        //     /* if(a%2===0){
+        //         document.write('pair');
+        //      } else{
+        //         document.write('impair');
+        //      } */       
+        //   }
+        //   else{
+        //     document.write(a,'n\est pas un nombre');
+        //   }
+           
+        
+
+        //   var nombre = 17;
+        //   var compteur = 0;
+        //   for (let i=2; i<=nombre; i++){
+        //       if(nombre%i==0){
+        //           compteur+=1;
+        //       }
+        //   }
+        //   if(compteur<=1){
+        //       document.write("Premier")
+        //   } else {
+        //       document.write("Non Premier")
+        //   }
+        /* 
+        var a = 6;
+         document.write('<center>');
+
+         for(var i = 0; i <= a ; i ++ ){
+             for(var j = 0 ; j< i;j ++){
+              document.write ("*")
+             }
+             document.write('<br>')
+         }
+         document.write('</center>')
+         */
+    //    var a = 3; 
+    //     document.write('<center>');
+    //     for (var i = 0;i<=a;i++){ 
+    //         for(var x = 0;x<i;x++){
+    //             document.write('*');
+    //         }
+    //         document.write('</br>');
+    //     }
+    //     document.write('</center>');
+
+          /*function olona( anarana , fanampy ){
+              this.anarana = anarana;
+              this.fanampy = fanampy;
+          }
+          let Ray = new olona("Rakota","rasoa");
+          console.log(Ray.anarana+" "+Ray.fanampy);
+          */
+            
+
+            
+        //   fonction asynchrone
+        //   function Hello(){
+        //       setTimeout(function(){console.log("hello Bruno");},3000);
+              
+        //   };
+        //     function call(a,b ){
+        //         console.log("mon test"+ b );
+        //        a();
+        //     }
+
+        //     call(Hello," test");
+         
+        //  fonction synchrone
+        // function henri(){
+        //     return
+        //     console.log("hello");
+        // }
+       
+        // const a = true;
+        // const test = new Promise((resolve, reject)=>{
+        //     setTimeout(function(){
+        //      (a)?resolve("ok"):reject("ko");},2000)
+              
+        //   });
+
+        /*  var b = false ;
+           var Prom = new Promise((res,rej)=>{
+               (b)? res("ok") : setTimeout(()=>{rej("ko");},5000)
+           });
+            
+          async function f(){
+            let c = await Prom;
+            console.log(c);
+          }
+          f().catch((e)=>{console.log(e);
+          });
+ */
+          
+        //   var b = true;
+        //   function Koto(res,rej){
+        //       return new Promise((res,rej)=>{setTimeout(function(){},1000);
+        //         (b)? res('ok'):rej('ko');
+        //       });
+        //   }
+         
+        //   async function f(){
+        //       let c = await Koto();
+        //       return c;  
+        //   }
+        //   f().then((e)=>{
+        //     console.log(e);
+        //   }).catch((r)=>{
+        //       console.log(r);
+        //   })
+/* 
+           var tab = [1,2,3,4,5,6,7,8]
+
+           var pair =[];
+           var impair =[];
+
+           for( var i=0 ; tab.length; i++){
+               if(tab[i]%2==0){
+                   pair.push(tab[i]);
+               }else{
+                   impair.push(tab[i]);
+               } 
+           }
+       console.log('pair',pair);
+       console.log('pair',impair);
+        */
+/* 
+
+        var a = '*';
+        var b= 9
+        document.write('<center>') 
+        for (var i = 0;i<=b; i++){        
+            for(var j=0; j<=i; j++){
+                document.write(a)
+            }
+            document.write('<br/>')
+        }
+        document.write('</center>') */
+	     </script>
+    </body>
+</html> 
